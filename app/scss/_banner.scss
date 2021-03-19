@@ -1,0 +1,139 @@
+.banner {
+
+  
+
+  &__inner {
+    
+    
+  }
+  
+ 
+  &__items {
+  }
+  
+  
+  &__item {
+    
+  }
+  &__subtitle {
+  }
+  
+
+  &__item--support {
+  }
+
+  
+
+  &__text {
+  }
+
+  
+
+  &__item--delivery {
+  }
+
+  
+
+  &__item--card {
+  }
+}
+
+.slidermain {
+ 
+
+  
+
+  &__items {
+    
+  }
+
+ 
+
+  &__item {    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;      
+    padding: 217px 0 280px 300px;
+  }  
+
+  &__link {
+    display: block;
+    color: $greendark;
+    position: relative;
+
+    &::after {
+      content: 'Shop Now';
+      display: block;
+      max-width: 200px;      
+      min-height: 60px;
+      color: $white;
+      background-color: $icon;
+      font-size: 15px;
+      @extend %rubik-500;
+      padding: 19px 10px 12px 27px;      
+    }
+    
+    &::before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 9px;
+      background-image: url(../images/icons/arrow.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center right;
+      position: absolute;
+      bottom: 26px;
+      left: 159px;
+    }
+  }
+
+  &__title {
+    @extend %rubik-500;
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 1;
+    color: $titlemain;
+    max-width: 500px;
+    margin-bottom: 22px;
+  }  
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 365px;
+    margin-bottom: 36px;
+  }
+  
+  .slick-dots {
+    display: flex;    
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    transform: translateX(-50%);
+
+    li {
+      &:not(:last-child) {
+        margin-right: 11px;
+      }
+
+      button {
+        padding: 0;         
+        @extend %rubik-500;
+        font-size: 11px;
+        color: $titlemain;
+        background-color: $dots;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        outline: transparent; 
+      }
+      &.slick-active {
+        button {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

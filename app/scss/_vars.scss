@@ -8,11 +8,25 @@
   font-weight: 400;
 }
 
+%sans-700 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+%sans-400 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
 $accent: #fcd7b6;
-$accentlight: #fde7d3;       
+$accentlight: #fde7d3;
+$dots: #fde3cc; 
+$accentmilk: #fef7f0; 
 $greendark: #436372;
+$greeninput: #234969;
 $graylight: #edf1f4;
-$white: #fff;
-$num: #243f4d;
+$graytext: #8d8d8d;
+$white: #fff;         
+$titlemain: #243f4d;
 $icon: #a3bbc8;
-$title: #29282d;
+$titlefooter: #1f2044;   
