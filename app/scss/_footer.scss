@@ -69,9 +69,9 @@
     cursor: pointer;
   }
   
-  &__input {
+  &__input {    
     font-size: 12px;
-    background-color: $accentmilk;
+    background-color: rgba($accent, 0.2);   
     max-width: 170px;
     padding: 9px 16px;
     outline: transparent;
@@ -82,7 +82,8 @@
     }
     
     &:focus {
-      background-color: $graylight;
+      background-color: $icon;
+      opacity: 0.2;
     }
     
     &:active {        
@@ -90,7 +91,7 @@
     }
     
     &::placeholder {
-      color: $greeninput;      
+      color: $greeninput;        
     }
   }  
   

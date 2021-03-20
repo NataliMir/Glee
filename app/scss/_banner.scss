@@ -1,40 +1,75 @@
-.banner {
-
+.banner {  
   
-
-  &__inner {
-    
-    
-  }
-  
- 
   &__items {
-  }
-  
+    background-color: rgba($accent,0.2);  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+  }  
   
   &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 42px 65px; 
     
-  }
+    &:not(:last-child) {
+      border-right: 1px solid rgba($titlemain,0.102);      
+    }
+  }  
+
   &__subtitle {
+    position: relative;
+    @extend %sans-700;    
+    font-size: 18px;
+    line-height: 2.2;      
+    color: $subtitle;      
+  }   
+  
+  &__support,
+  &__delivery,
+  &__card {    
+    &::before {
+      content: '';      
+      position: absolute;
+      top: 10px;
+      left: -80px;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
   }
   
-
-  &__item--support {
+  &__support {
+    &::before {
+      background-image: url('../images/icons/support.svg');
+      width: 60px;
+      height: 50px;
+    }
+  }  
+  
+  &__delivery {
+    &::before {
+      background-image: url('../images/icons/delivery.svg');
+      width: 60px;
+      height: 30px;
+    }
+  }  
+  
+  &__card {
+    &::before {
+      background-image: url('../images/icons/credit-card.svg');
+      width: 60px;
+      height: 45px;
+    }
   }
 
-  
-
-  &__text {
-  }
-
-  
-
-  &__item--delivery {
-  }
-
-  
-
-  &__item--card {
+  &__text {    
+    @extend %sans-400;   
+    font-size: 16px;
+    line-height: 1.875;      
+    color: $graytextdark; 
+    max-width: 240px;   
   }
 }
 
@@ -60,17 +95,18 @@
     display: block;
     color: $greendark;
     position: relative;
+    outline: transparent;
 
     &::after {
       content: 'Shop Now';
       display: block;
-      max-width: 200px;      
+      max-width: 200px;
       min-height: 60px;
       color: $white;
       background-color: $icon;
       font-size: 15px;
       @extend %rubik-500;
-      padding: 19px 10px 12px 27px;      
+      padding: 19px 10px 12px 27px;
     }
     
     &::before {
@@ -122,18 +158,20 @@
         @extend %rubik-500;
         font-size: 11px;
         color: $titlemain;
-        background-color: $dots;
+        background-color: $white;
         border: none;
         width: 30px;
         height: 30px;
         border-radius: 100%;
         outline: transparent; 
+        opacity: 0.3;
       }
       &.slick-active {
-        button {
-          background-color: $white;
+        button {         
+          opacity: 1;
         }
       }
     }
   }
 }
+
