@@ -1,5 +1,4 @@
-.banner {  
-  
+.banner {   
   &__items {
     background-color: rgba($accent,0.2);  
     display: grid;
@@ -33,7 +32,6 @@
       position: absolute;
       top: 10px;
       left: -80px;
-
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -74,15 +72,6 @@
 }
 
 .slidermain {
- 
-
-  
-
-  &__items {
-    
-  }
-
- 
 
   &__item {    
     background-repeat: no-repeat;
@@ -91,23 +80,17 @@
     padding: 217px 0 280px 300px;
   }  
 
-  &__link {
+  &__btn {
     display: block;
-    color: $greendark;
+    max-width: 200px;
+    min-height: 60px;    
+    font-size: 15px;
+    @extend %rubik-500;
+    padding: 19px 10px 12px 27px;
+    color: $white;
+    background-color: $icon;
     position: relative;
-    outline: transparent;
-
-    &::after {
-      content: 'Shop Now';
-      display: block;
-      max-width: 200px;
-      min-height: 60px;
-      color: $white;
-      background-color: $icon;
-      font-size: 15px;
-      @extend %rubik-500;
-      padding: 19px 10px 12px 27px;
-    }
+    outline: transparent;    
     
     &::before {
       content: '';
@@ -137,10 +120,11 @@
   &__text {
     font-size: 18px;
     line-height: 1.7;
+    color: $greendark;
     max-width: 365px;
     margin-bottom: 36px;
   }
-  
+
   .slick-dots {
     display: flex;    
     position: absolute;

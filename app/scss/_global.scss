@@ -33,3 +33,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.title {  
+  font-size: 36px;
+  line-height: 1.2;
+  @extend %sans-700;  
+  color: $title;   
+  text-align: center;  
+}
