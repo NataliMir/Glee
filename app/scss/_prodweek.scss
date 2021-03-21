@@ -1,19 +1,20 @@
 .prodweek {
-  padding: 60px 0;
+  padding: 66px 0;
   
   &__container {
     max-width: 1200px;    
   }
  
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }  
 
   &__items {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,380px);
-    grid-gap: 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 41px;
   } 
 
   &__item {
@@ -25,7 +26,7 @@
     background-color: $white;
     box-shadow: 0px 6px 47px 3px #2525250d;
     border-radius: 10px;   
-    padding: 30px 0 35px;
+    padding: 30px 0 33px;
     
     &:hover {
       .usermenu {
@@ -42,7 +43,13 @@
   &__content {
     max-width: 100%;
     @extend %sans-700;
-    line-height: 2.5;    
+    line-height: 1.8;    
+  }
+
+  &__visial {
+    display: flex;
+    align-items: center;
+    min-height: 206px;
   }
 
   &__content {
@@ -55,24 +62,25 @@
   &__price {
     display: inline-block;
   }
-
+  
   &__name {
-    color: $titlemain;
+    color: $titlemain;    
   }  
-
+  
   &__price {
-    color: $icon;
-  }
+    color: $icon;  
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }  
 }
 
-
-.menusection {
+.filter {
   text-align: center;
 
   &__items {
     display: flex;
     justify-content: center;
-    margin-bottom: 65px;
+    margin-bottom: 72px;
   }
 
   &__item {
@@ -81,7 +89,11 @@
     }
   }
 
-  &__link {    
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: transparent;
     @extend %sans-700;
     font-size: 16px;
     line-height: 1.2;
@@ -90,7 +102,11 @@
 
     &:hover {
       color: $menuhover;
-    }    
+    }
+    
+    &-active {
+      color: $menuhover; 
+    }
   }
 }
 

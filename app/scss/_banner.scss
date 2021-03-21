@@ -72,38 +72,40 @@
 }
 
 .slidermain {
-
   &__item {    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;      
     padding: 217px 0 280px 300px;
-  }  
+  } 
+  
+  &__link {
+    outline: transparent;
+  }
 
   &__btn {
-    display: block;
     max-width: 200px;
     min-height: 60px;    
-    font-size: 15px;
-    @extend %rubik-500;
-    padding: 19px 10px 12px 27px;
+    padding: 16px 40px 15px 29px;
     color: $white;
     background-color: $icon;
-    position: relative;
-    outline: transparent;    
+
+    &:hover {
+      background-color: $greendark;
+    }
+
+    &:focus {
+      border: 2px solid $greendark;
+    }
+
+    &:active {
+      color: $titlemain;
+      background-color: $white;
+    }
     
     &::before {
-      content: '';
-      display: block;
-      width: 22px;
-      height: 9px;
       background-image: url(../images/icons/arrow.svg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center right;
-      position: absolute;
-      bottom: 26px;
-      left: 159px;
+      right: 19px;
     }
   }
 

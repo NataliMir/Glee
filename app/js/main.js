@@ -5,7 +5,8 @@ $(function() {
     arrows: false,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
   });
-  
+
+  mixitup('.prodweek__items');  
 });
