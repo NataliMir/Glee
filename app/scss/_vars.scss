@@ -8,11 +8,26 @@
   font-weight: 400;
 }
 
+%sans-700 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+%sans-400 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
 $accent: #fcd7b6;
-$accentlight: #fde7d3;       
-$greendark: #436372;
-$graylight: #edf1f4;
-$white: #fff;
-$num: #243f4d;
+$white: #fff;         
+$titlemain: #243f4d;
+$title: #191919;
+$subtitle: #414141;
+$titlefooter: #1f2044;
 $icon: #a3bbc8;
-$title: #29282d;
+$greendark: #436372;
+$greeninput: #234969;
+$graytext: #7b7b7b;
+$graytextdark: #585858;
+$menu: #8b8b8b;
+$menuhover: #1a1a1a;
